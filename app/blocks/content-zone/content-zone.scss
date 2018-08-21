@@ -66,7 +66,84 @@
       @include text-small;
     }
 
-    @include text;
+		@include text;
+
+
+		&:nth-child(7) {
+			@include text-1;
+		}
+
+		&:nth-child(8) {
+			@include text-2;
+		}
+
+		&:nth-child(9) {
+			@include text-3;
+		}
+
+		&:nth-child(10) {
+			@include text-3-1;
+		}
+
+		&:nth-child(11) {
+			@include text-3-2;
+		}
+
+		&:nth-child(12) {
+			@include text-3-3;
+		}
+
+		&:nth-child(13) {
+			@include text-4;
+		}
+
+		&:nth-child(14) {
+			@include text-4-1;
+		}
+
+		&:nth-child(15) {
+			@include text-4;
+		}
+
+		&:nth-child(16) {
+			@include text-5;
+		}
+
+		&:nth-child(17) {
+			@include text-6;
+		}
+
+		&:nth-child(18) {
+			@include text-7;
+		}
+
+		&:nth-child(19) {
+			@include text-7-1;
+		}
+
+		&:nth-child(20) {
+			@include text-8;
+		}
+
+		&:nth-child(21) {
+			@include text-8-1;
+		}
+
+		&:nth-child(22) {
+			@include text-9;
+		}
+
+		&:nth-child(23) {
+			@include text-9-1;
+		}
+
+		&:nth-child(24) {
+			@include text-10;
+		}
+
+		&:nth-child(25) {
+			@include text-11;
+		}
   }
 
   blockquote {

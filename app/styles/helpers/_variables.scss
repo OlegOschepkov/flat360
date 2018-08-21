@@ -1,39 +1,46 @@
 // Здесь используем комментарии только через "//", т.к. они нам не нужны в итоговом css-файле
-
 // ##########
 // Базовые настройки сетки сайта
 // ##########
-$container-width: 960px; // Максимальная ширина контейнера контента
-$container-padding: 20px; // Отступы слева и справа у контейнера
+$container-width: 1075px; // Максимальная ширина контейнера контента
+$container-padding: 0; // Отступы слева и справа у контейнера
 $grid-container-width: 100%; // Ширина контейнера сетки
 $grid-cols: 12; // Количество колонок в сетке
 $grid-gap: 20px; // Расстояние между колонками
 $grid-gap-vertical: 20px; // Расстояние между строками в сетке
 $grid-col-width: $grid-container-width/$grid-cols; // Ширина одной колонки
-$breakpoints: (
-  'xl': 1920px,
-  'lg': 1280px,
-  'md': 1024px,
-  'sm': 768px,
-  'xs': 480px
-);
-
+$breakpoints: ( 'xl': 1920px, 'lg': 1280px, 'md': 1024px, 'sm': 768px, 'xs': 480px);
 // ##########
 // Цвета
 // ##########
-$color-basic: black; // Основной цвет текста (применяется к body)
+$color-basic: white;
+$color-charcoal: #292d30; // Фоновый
+$color-brown: #9a7058; // Фоновый
+$color-black-pearl: #202325; // Цвет-заглушка Landing buy tablet form
+$color-beige: #bc8d72;
+$color-toast: #a1775e;
+
+
 $color-placeholder: #777; // Основной цвет для placeholder
 $color-input: black; // Основной цвет input, select и textarea
 $color-main: #2252d8; // Основной фирменный цвет
 $color-border: #ccc; // Основной цвет границ таблиц, секций
 
+
+$color-suvagrey: #8e8e8e; // Цвет для {*-Поле обязательно....}  Landing buy tablet form
+$color-dimgrey: #666666; // Цвет <label>  Landing buy tablet form
+$color-antracite: #292d30; //Черный для некоторых текстов
+$color-smoke: #f2f2f2; //Белый для некоторых текстов
+$color-silver: #b9b9b9; // Белый для некоторых текстов
+$color-sand: #dabfaf; // Brown для некоторых текстов
 // ##########
 // Transitions
 // ##########
 $ease-main: .3s ease;
-
 // ##########
 // Шрифты
 // ##########
-$font-main: Arial, sans-serif; // Основной шрифт сайта
-$font-second: Times New Roman, sans-serif; // Дополнительный шрифт
+$font-main: Montserrat,
+sans-serif; // Основной шрифт сайта
+$font-second: Times New Roman,
+sans-serif; // Дополнительный шрифт

@@ -17,8 +17,8 @@ block content
     +ui-section._grid
       +ui-section-head
         h2 Сетка
-        p Отступы слева и справа от экрана: 20px ($container-padding)
-        p Ширина контейнера: 960px ($container-width)
+        p Отступы слева и справа от экрана: 0 ($container-padding)
+        p Ширина контейнера: 1075px ($container-width)
         p Ширина контейнера сетки: 100% ($grid-container-width)
         p Колонок: 12 ($grid-cols)
         p Горизонтальное расстояние между колонками: 20px ($grid-gap)
@@ -64,11 +64,17 @@ block content
         p Переменные находятся в файле styles/helpers/_variables.scss
       +ui-section-content()
         +ui-elements-list()
-          +ui-color('black', '$color-basic', true)
-          +ui-color('#2252d8', '$color-main', true)
-          +ui-color('#777', '$color-placeholder', true)
-          +ui-color('black', '$color-input', true)
-          +ui-color('#ccc', '$color-border')
+          +ui-color('#292d30', '$color-charcoal', true)
+          +ui-color('#9a7058', '$color-brown', true)
+          +ui-color('#202325', '$color-black-pearl', true)
+          +ui-color('#bc8d72', '$color-beige', true)
+          +ui-color('#a1775e', '$color-toast', true)
+          +ui-color('#8e8e8e', '$color-suvagrey', true)
+          +ui-color('#666666', '$color-dimgrey', true)
+          +ui-color('#292d30', '$color-antracite', true)
+          +ui-color('#f2f2f2', '$color-smoke', true)
+          +ui-color('#b9b9b9', '$color-silver', true)
+          +ui-color('#dabfaf', '$color-sand', true)
 
     //- Цвета
     +ui-section
@@ -79,13 +85,15 @@ block content
       +ui-section-content()
         +ui-elements-list()
           +ui-gradient('gradient-main', true)._gradient_main
+          +ui-gradient('gradient-brown', true)._gradient_brown
+          +ui-gradient('gradient-tilt-brown', true)._gradient_tilt_brown
 
     //- Шрифты и контентная зона
     +ui-section
       +ui-section-head
         h2 Шрифты и контентная зона
-        p Основной шрифт: Arial ($font-main), font-weight: 400, 600
-        p Дополнительный шрифт: Times New Roman ($font-second), font-weight: 400, 600
+        p Основной шрифт: Monserrat ($font-main), font-weight: 400, 500, 600
+        p Дополнительный шрифт: Times New Roman ($font-second), font-weight: 400, 500, 600
         p Переменные находятся в файле styles/helpers/_variables.scss
         p Шрифты подключены в styles/helpers/_fonts.scss
         p Контентная зона: blocks/content-zone
@@ -101,6 +109,24 @@ block content
             h5 Заголовок H5 (heading-5)
             h6 Заголовок H6 (heading-6)
             p Текст p (text)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-1)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-2)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-3)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-3-1)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-3-2)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-3-3)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-4)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-4-1)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-5)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-6)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-7)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-7-1)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-8)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-8-1)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-9)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-9-1)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-10)<br> Цитата внутри текста p: <q>Цитата q</q>
+            p Текст p (text-11)<br> Цитата внутри текста p: <q>Цитата q</q>
             p <small>Тег small внутри p (text-small)</small>
             blockquote
               p Демонстрация цитаты через тег blockquote

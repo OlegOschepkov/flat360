@@ -186,8 +186,11 @@ $ui-kit-color-darkbg: #111;
     &_bg_dark { color: white; }
 
     &_gradient {
-      &_main { @include gradient-main; }
-    }
+			&_main { @include gradient-main; }
+			&_brown { @include gradient-brown; }
+			&_tilt_brown { @include gradient-tilt-brown; }
+		}
+
   }
 
   &__custom-text {

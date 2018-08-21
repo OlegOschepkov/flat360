@@ -1,3 +1,11 @@
 @mixin gradient-main {
   background: linear-gradient(0deg, $color-main, $color-border);
 }
+
+@mixin gradient-brown {
+  background: linear-gradient(to top, $color-beige, $color-brown);
+}
+
+@mixin gradient-tilt-brown {
+  background: linear-gradient(-1deg, $color-toast, $color-brown);
+}
