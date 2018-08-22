@@ -109,24 +109,6 @@ block content
             h5 Заголовок H5 (heading-5)
             h6 Заголовок H6 (heading-6)
             p Текст p (text)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-1)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-2)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-3)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-3-1)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-3-2)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-3-3)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-4)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-4-1)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-5)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-6)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-7)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-7-1)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-8)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-8-1)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-9)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-9-1)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-10)<br> Цитата внутри текста p: <q>Цитата q</q>
-            p Текст p (text-11)<br> Цитата внутри текста p: <q>Цитата q</q>
             p <small>Тег small внутри p (text-small)</small>
             blockquote
               p Демонстрация цитаты через тег blockquote
@@ -153,7 +135,8 @@ block content
                   li Элемент списка
               li Элемент списка
         +ui-description Другие стили текстов:
-        +ui-custom-text._style-1 Пример кастомного стиля на примере стандартного (%text)
+        - for (var i=1; i<21; i++)
+          +ui-custom-text(class='ui-kit__custom-text_'+i) Пример кастомного стиля на примере стандартного (text-#{i})
 
     //- Таблицы
     +ui-section
@@ -484,17 +467,38 @@ block content
               | +put-block-into-slot('slotId', 'xs')
             +put-block-into-slot('slotId', 'xs')
 
-  script
-    |
-    | $('.ui-kit__section').each(function (i) {
-    |   var id = 'section' + i;
-    |   var name = $(this).find('.ui-kit__section-head h2').text();
-    |   var li = $('<li></li>');
-    |   var a = $('<a></a>');
-    |
-    |   a.attr('href', '#'+id).text(name).addClass('js-anchor');
-    |   li.append(a);
-    |
-    |   $('.ui-kit__navigation__list').append(li);
-    |   $(this).attr('id', id);
-    | });
+  script.
+    //- |
+    //- | $('.ui-kit__section').each(function (i) {
+    //- |   var id = 'section' + i;
+    //- |   var name = $(this).find('.ui-kit__section-head h2').text();
+    //- |   var li = $('<li></li>');
+    //- |   var a = $('<a></a>');
+    //- |
+    //- |   a.attr('href', '#'+id).text(name).addClass('js-anchor');
+    //- |   li.append(a);
+    //- |
+    //- |   $('.ui-kit__navigation__list').append(li);
+    //- |   $(this).attr('id', id);
+    //- | });
+     var parseMixins = function (onSuccess) {
+        var xhr = new XMLHttpRequest();
+        xhr.responseType = 'json';
+        xhr.addEventListener('load', function () {
+          onSuccess(xhr.response);
+          console.log(xhr.response);
+        });
+        return xhr;
+      };
+
+      var load = function (onSuccess) {
+        var xhr = parseMixins(onSuccess);
+        xhr.open('GET', '../styles/helpers/_mixins.scss');
+        xhr.send();
+      };
+
+     var onSuccess = function (data) {
+       console.log(data)
+      };
+
+     load(onSuccess);
