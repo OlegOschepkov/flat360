@@ -186,35 +186,27 @@ $ui-kit-color-darkbg: #111;
     &_bg_dark { color: white; }
 
     &_gradient {
-			&_main { @include gradient-main; }
-			&_brown { @include gradient-brown; }
-			&_tilt_brown { @include gradient-tilt-brown; }
-		}
-
-	}
-
-  	&__custom-text {
-			&_1 { @include text-1; }
-			&_2 { @include text-1-1; }
-			&_3 { @include text-1-2; }
-			&_4 { @include text-2; }
-			&_5 { @include text-3; }
-			&_6 { @include text-3-1; }
-			&_7 { @include text-3-2; }
-			&_8 { @include text-3-3; }
-			&_9 { @include text-4; }
-			&_10 { @include text-4-1; }
-			&_11 { @include text-5; }
-			&_12 { @include text-6; }
-			&_13 { @include text-7; }
-			&_14 { @include text-7-1; }
-			&_15 { @include text-8; }
-			&_16 { @include text-8-1; }
-			&_17 { @include text-9; }
-			&_18 { @include text-9-1; }
-			&_19 { @include text-10; }
-			&_20 { @include text-11; }
-		}
-    &:not(:last-child) { margin-bottom: 10px; }
+      &_main { @include gradient-main; }
+      &_brown { @include gradient-brown; }
+      &_tilt_brown { @include gradient-tilt-brown; }
+    }
   }
 
+  &__custom-text {
+    &_1 { @include text-1; }
+    &_2 { @include text-2; }
+    &_3 { @include text-3; }
+    &_4 { @include text-4; }
+    &_5 { @include text-5; }
+    &_6 { @include text-6; }
+    &_7 { @include text-7; }
+    &_8 { @include text-8; }
+    &_9 { @include text-9; }
+    &_10 { @include text-10; }
+    &_11 { @include text-11; }
+   }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

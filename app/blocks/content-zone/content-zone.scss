@@ -66,9 +66,7 @@
       @include text-small;
     }
 
-		@include text;
-
-
+    @include text;
   }
 
   blockquote {
@@ -111,6 +109,5 @@
 
   ol { @include ollist; }
 
-	a { @include link; }
-
+  a { @include link; }
 }

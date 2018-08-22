@@ -19,6 +19,7 @@ gulp.task("ghpages", ghpages);
 gulp.task("images", images);
 gulp.task("icons", icons);
 gulp.task("styles", styles.build);
+gulp.task("lint", styles.lint);
 gulp.task("templates", templates);
 gulp.task("copymain", copymain);
 gulp.task("server", server);
@@ -32,7 +33,16 @@ gulp.task(
   "build",
   gulp.series(
     "clean",
-    gulp.parallel("styles", "scripts", "copymain", "icons", "templates", "copy")
+    gulp.parallel(
+      "styles",
+      "lint",
+      "scripts",
+      "copymain",
+      "images",
+      "icons",
+      "templates",
+      "copy"
+    )
   )
 );
 

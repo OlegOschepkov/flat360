@@ -9,27 +9,23 @@ $grid-cols: 12; // Количество колонок в сетке
 $grid-gap: 20px; // Расстояние между колонками
 $grid-gap-vertical: 20px; // Расстояние между строками в сетке
 $grid-col-width: $grid-container-width/$grid-cols; // Ширина одной колонки
-$breakpoints: ( 'xl': 1920px, 'lg': 1280px, 'md': 1024px, 'sm': 768px, 'xs': 480px);
+$breakpoints: ( 'xl': 1365px, 'sm': 767px);
 // ##########
 // Цвета
 // ##########
 $color-basic: white;
-$color-charcoal: #292d30; // Фоновый
 $color-brown: #9a7058; // Фоновый
 $color-black-pearl: #202325; // Цвет-заглушка Landing buy tablet form
 $color-beige: #bc8d72;
 $color-toast: #a1775e;
-
-
-$color-placeholder: #777; // Основной цвет для placeholder
-$color-input: black; // Основной цвет input, select и textarea
-$color-main: #2252d8; // Основной фирменный цвет
-$color-border: #ccc; // Основной цвет границ таблиц, секций
-
-
+$color-placeholder: #666; // Основной цвет для placeholder
+$color-input: white; // Основной цвет input, select и textarea
+$color-input-bg: transparent; // прозрачный фоновый для Input
+$color-main: #9a7058; // Основной фирменный цвет. Вероятно! Не смог понять какой использовать, antracite или brown.
+$color-border: white; // Основной цвет границ таблиц, секций
 $color-suvagrey: #8e8e8e; // Цвет для {*-Поле обязательно....}  Landing buy tablet form
-$color-dimgrey: #666666; // Цвет <label>  Landing buy tablet form
-$color-antracite: #292d30; //Черный для некоторых текстов
+$color-dimgrey: #666; // Цвет <label>  Landing buy tablet form
+$color-antracite: #292d30; //Черный для некоторых текстов + фоновый
 $color-smoke: #f2f2f2; //Белый для некоторых текстов
 $color-silver: #b9b9b9; // Белый для некоторых текстов
 $color-sand: #dabfaf; // Brown для некоторых текстов
@@ -40,7 +36,4 @@ $ease-main: .3s ease;
 // ##########
 // Шрифты
 // ##########
-$font-main: Montserrat,
-sans-serif; // Основной шрифт сайта
-$font-second: Times New Roman,
-sans-serif; // Дополнительный шрифт
+$font-main: Montserrat, sans-serif; // Основной шрифт сайта
