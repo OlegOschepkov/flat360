@@ -1,0 +1,90 @@
+.main-section {
+  display: block;
+  min-height: 100vh;
+  // height: 568px;
+  padding: 0 31px 0 28px;
+  background: url('/assets/images/BG_sale.jpg') center center;
+
+  &__content {
+    padding-top: 200px;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  &__title, &__select {
+    @include text-2;
+  }
+
+  &__select {
+    border: 1px solid rgba($color: #fff, $alpha: 0.5);
+    // position: relative;
+    transition: $ease-main;
+    width: auto;
+
+    &:hover {
+      background-color: $color-brown;
+    }
+  }
+
+  &__text {
+    @include text-7;
+  }
+}
+
+// .selection__option {
+//   height: auto;
+//   @include text-2;
+// }
+
+.visually-hidden {
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+}
+
+
+@media screen and (min-width: 767px) {
+  .main-section {
+    background: url('/assets/images/BG_sale_tablet.jpg') center center;
+    padding: 0 92px;
+
+    &__content {
+      padding-top: 327px;
+    }
+
+    &__title, &__select {
+      @include heading-3;
+    }
+
+    &__text {
+      @include text-4;
+      margin-top: 42px;
+    }
+  }
+}
+
+@media screen and (min-width: 1075px) {
+  .main-section {
+    background: url('/assets/images/BG_sale_desktop.jpg') center center;
+    padding: 0 165px;
+
+    &__content {
+      padding-top: 286px;
+    }
+
+    &__title, &__select {
+      @include heading-1;
+      line-height: calc(100 / 76);
+    }
+    &__text {
+      @include text-4;
+      margin-top: 39px;
+      margin-left: 3px;
+    }
+  }
+}

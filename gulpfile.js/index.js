@@ -35,7 +35,7 @@ gulp.task(
     "clean",
     gulp.parallel(
       "styles",
-      "lint",
+      // "lint",
       "scripts",
       "copymain",
       "images",
@@ -52,3 +52,8 @@ gulp.task(
 );
 
 gulp.task("deploy", gulp.series("build", "ghpages"));
+
+gulp.task(
+  "lets",
+  gulp.series("build", gulp.parallel("watch", "scripts:watch", "server"))
+);

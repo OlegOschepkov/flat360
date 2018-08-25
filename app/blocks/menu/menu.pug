@@ -1,0 +1,8 @@
+mixin navigation(name, ...items)
+  +b.navigation&attributes(attributes)
+    +e.P.text Смотрите и подписывайтесь на обновления нашей эксклюзивной подборки недвижимости.
+    +b.UL(class=name)
+      each item in items
+        +e.item
+          +link= item
+    block

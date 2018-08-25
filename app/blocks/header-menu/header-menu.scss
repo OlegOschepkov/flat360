@@ -1,0 +1,131 @@
+.header-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background: $color-antracite url('/assets/images/BG_catalog.png') -350px center;
+
+  &__phone {
+    margin-top: 112px;
+    @include text-3;
+    line-height: calc(24 / 18);
+  }
+
+  &__text {
+    margin-top: 34px;
+    @include text-9;
+    max-width: 398px;
+  }
+
+  &__list {
+    margin-top: 16px;
+    list-style: none;
+  }
+}
+
+.list__item {
+  @include heading-6;
+  text-decoration: none;
+  opacity: 0.4;
+  margin-bottom: 5px;
+
+  a {
+    text-decoration: none;
+    color: $color-basic;
+  }
+}
+
+.container__catalog {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding: 0 30px 36px;
+  margin: 0;
+}
+
+.button__order--menu {
+  margin-top: auto;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  text-align: center;
+  @include text-5;
+  max-width: 287px;
+}
+
+@media screen and (min-width: 767px) {
+  .container__catalog {
+    padding: 0 95px;
+  }
+
+  .header-menu {
+    background: url('/assets/images/BG_catalog.png') -650px center no-repeat, url('/assets/images/BG_tablet_menu.png') 100px 620px no-repeat, $color-antracite;
+
+    &__list {
+      margin-top: 12px;
+    }
+
+    &__phone {
+      margin-left: 2px;
+      margin-top: 225px;
+      @include text-1;
+    }
+
+    &__text {
+      margin-top: 63px;
+      @include text-4;
+      line-height: calc(26 / 18);
+    }
+  }
+
+  .list__item {
+    @include heading-1;
+    font-size: 76px;
+    margin-bottom: -21px;
+
+  }
+
+  .button__order--menu {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 95px;
+    @include text-7;
+  }
+}
+
+@media screen and (min-width: 1075px) {
+  .container__catalog {
+    flex-direction: row;
+    padding-left: 170px;
+  }
+
+  .header-menu {
+    background: url('/assets/images/BG_catalog.png') -20px -30px no-repeat, url('/assets/images/BG_tablet_menu_big.png') 600px 485px no-repeat, $color-antracite;
+
+    &__phone {
+      display: none;
+    }
+
+    &__text {
+      @include text-4;
+      width: 196px;
+      margin-top: 327px;
+      margin-right: 139px;
+    }
+
+    &__list {
+      margin-top: 312px;
+    }
+  }
+
+  .button__order--menu {
+    display: none;
+  }
+
+  .list__item {
+    margin-bottom: -15px;
+  }
+}

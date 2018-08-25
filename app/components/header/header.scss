@@ -1,0 +1,116 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  width: calc(100% - 62px);
+  position: fixed;
+  z-index: 100;
+  top: 30px;
+
+  &__phone {
+    display: none;
+  }
+
+  &__logo {
+    img {
+      width: 129px;
+      height: 21px;
+    }
+  }
+}
+
+.button {
+  &__order {
+  display: none;
+  }
+  &__title {
+    display: none;
+  }
+  &__catalog {
+    width: 27px;
+    height: 27px;
+    border: none;
+    padding: 0;
+    // position: fixed;
+    // z-index: 100;
+    // right: 44px;
+    // top: 30px;
+    background: url('/assets/images/burger.svg') center center no-repeat;
+
+    &.is-active {
+        background: url('/assets/images/Catalog_close.svg') center center;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 767px) {
+  .header {
+    margin: 0 4px;
+    top: 64px;
+    width: calc(100% - 200px);
+
+    &__logo {
+      img {
+        width: 156px;
+        height: 26px;
+      }
+    }
+  }
+
+  .button {
+    &__catalog {
+      margin-top: -2px;
+      background: url('/assets/images/burger.svg') top center no-repeat;
+    }
+  }
+}
+
+@media screen and (min-width: 1075px) {
+  .header {
+    top: 57px;
+    margin: 0 6px 0 5px;
+    width: calc(100% - 341px);
+  }
+  .button__catalog {
+    width: auto;
+    margin-left: 21px;
+    margin-right: 30px;
+    padding-right: 15px;
+    background: transparent;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 70px;
+      width: 8px;
+      height: 8px;
+      background-color: transparent;
+      box-shadow: 2px 2px 0 0 white;
+      transform: rotate(45deg);
+    }
+  }
+
+  .button__order {
+    display: block;
+    @include text-7;
+    padding: 9px 16px 12px 17px;
+    margin-top: -9px;
+  }
+
+  .header__phone {
+    margin: 0 auto;
+    display: block;
+    @include text-1;
+    line-height: calc(24 / 24);
+  }
+
+  .button__title {
+    display: inline;
+    @include text-7;
+  }
+}
