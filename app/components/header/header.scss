@@ -71,8 +71,9 @@
 @media screen and (min-width: 1075px) {
   .header {
     top: 57px;
-    margin: 0 6px 0 5px;
-    width: calc(100% - 341px);
+    padding: 0 6px 0 5px;
+    margin: 0 auto;
+    width: 1025px;
   }
   .button__catalog {
     width: auto;
