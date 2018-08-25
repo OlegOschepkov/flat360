@@ -14,7 +14,48 @@
 </head>
 
 <body>
-    <div class="index"></div>
+    <section class="main-section">
+        <div class="container">
+            <header class="visually-hidden header">
+                <div class="header__logo">
+                    <img src="/assets/images/360flatLogo.svg" alt="Логотип 360flatLogo" />
+                </div>
+                <p class="visually-hidden__phone">8 800 550 94 22</p>
+                <a class="button button__catalog js-toggle js-toggle_header-menu">
+                    <span class="button__title">Каталог</span>
+                </a>
+                <a class="button button__order">Оставить заявку</a>
+            </header>
+            <div class="main-section__content">
+                <h1 class="main-section__title">Поможем
+                    <select class="main-section__select selection">
+                        <option class="selection__option" value="купить" selected="selected">
+                            <link href="buy" />купить</option>
+                        <option class="selection__option" value="продать">
+                            <link href="sale" />продать</option>
+                    </select>недвижимость бизнес-класса в Крыму</h1>
+                <p class="main-section__text">База эксклюзивной недвижимости</p>
+            </div>
+        </div>
+    </section>
+    <div class="header-menu">
+        <DIV class="container__catalog">
+            <p class="header-menu__phone">8 800 550 94 22</p>
+            <p class="header-menu__text">Смотрите и подписывайтесь на обновления нашей эксклюзивной подборки недвижимости.</p>
+            <ul class="header-menu__list list">
+                <li class="list__item">
+                    <a href="VKlink">Vkontakte</a>
+                </li>
+                <li class="list__item">
+                    <a href="FBlink">Facebook</a>
+                </li>
+                <li class="list__item">
+                    <a href="InstaLink">Instagram</a>
+                </li>
+            </ul>
+            <a class="button button__order--menu">Оставить заявку</a>
+        </DIV>
+    </div>
     <script src="assets/scripts/app.min.js"></script>
     <script src="assets/scripts/main.js"></script>
 </body>
