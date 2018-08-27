@@ -43,9 +43,15 @@
   }
 
   &__item {
-    padding-bottom: 25px;
+    box-sizing: border-box;
     width: 100%;
+    padding-left: 5px;
+    padding-right: 0;
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color-brown;
   }
 
   &__list {
@@ -75,3 +81,72 @@
     }
   }
 }
+
+
+// .dropdown {
+//   display: inline-block;
+//   position: relative;
+//   height: 76px;
+//   vertical-align: top;
+
+//   $b: &;
+
+//   &__arrow {
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     right: 15px;
+//     margin: auto;
+//     transition: transform $ease-main;
+
+//     #{$b}:hover &, #{$b}.is-active & {
+//       transform: rotate(180deg);
+//     }
+//   }
+
+//   &__button, &__item {
+//     padding: 0 15px 10px;
+//   }
+
+//   &__button {
+//     position: relative;
+//     display: block;
+//     padding-right: 70px;
+//     border: 1px solid white;
+//     z-index: 1;
+//     transition: border-color $ease-main;
+
+//     #{$b}:hover &, #{$b}.is-active & {
+//       border-color: $color-main;
+//     }
+//   }
+
+//   &__item {
+//     padding-bottom: 25px;
+//     width: 100%;
+//     display: block;
+//   }
+
+//   &__list {
+//     position: relative;
+//     display: none;
+//     z-index: 1;
+//   }
+
+//   &__content {
+//     position: relative;
+
+//     &::after {
+//       content: '';
+//       transform: scale(0, 1);
+//       background-color: $color-main;
+//       position: absolute;
+//       transition: transform $ease-main;
+//       transform-origin: left top;
+
+//       #{$b}:hover &, #{$b}.is-active & {
+//         transform: scale(1);
+//       }
+//     }
+//   }
+// }
