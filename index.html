@@ -28,12 +28,14 @@
             </header>
             <div class="main-section__content">
                 <h1 class="main-section__title">Поможем
-                    <select class="main-section__select selection">
-                        <option class="selection__option" value="купить" selected="selected">
-                            <link href="buy" />купить</option>
-                        <option class="selection__option" value="продать">
-                            <link href="sale" />продать</option>
-                    </select>недвижимость бизнес-класса в Крыму</h1>
+                    <div class="dropdown js-dropdown main-section__dropdown">
+                        <div class="dropdown__content">
+                            <button class="dropdown__button">продать</button>
+                            <div class="dropdown__list js-dropdown-list">
+                                <a class="dropdown__item" href="#">купить</a>
+                            </div>
+                        </div>
+                    </div>недвижимость бизнес-класса в Крыму</h1>
                 <p class="main-section__text">База эксклюзивной недвижимости</p>
             </div>
         </div>

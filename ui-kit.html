@@ -721,11 +721,25 @@
                     <p class="ui-kit__description">Для использования, нужно "кнопке" добавить класс .js-dropdown-toggle</p>
                     <div style="display: inline-block; position: relative; margin-bottom: 24px;">
                         <a class="button js-dropdown-toggle">top</a>
-                        <div class="js-dropdown dropdown dropdown_position_top">content</div>
+                        <div class="dropdown js-dropdown _position_top">
+                            <div class="dropdown__content">
+                                <button class="dropdown__button">content</button>
+                                <div class="dropdown__list js-dropdown-list">
+                                    <a class="dropdown__item" href="#">купить</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div style="display: inline-block; position: relative; margin-bottom: 24px;">
                         <a class="button js-dropdown-toggle">bottom</a>
-                        <div class="js-dropdown dropdown">content</div>
+                        <div class="dropdown js-dropdown">
+                            <div class="dropdown__content">
+                                <button class="dropdown__button">content</button>
+                                <div class="dropdown__list js-dropdown-list">
+                                    <a class="dropdown__item" href="#">купить</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
