@@ -4,13 +4,18 @@ mixin main-section()
       +header.header
       +b.main-section__content
         h1.main-section__title Поможем
-          select.main-section__select.selection
-            option(value="купить" selected).selection__option
-              link(href="buy")
-              |купить
-            option(value="продать").selection__option
-              link(href="sale")
-              |продать
+          +dropdown.main-section__dropdown продать
+          //- +inputbox
+          //-   //- +select
+          //-   //-   option(value="купить") купить
+          //-   //-   option(value="продать") продать
+          //-   +select.main-section__select.selection
+          //-     option(value="купить" selected).selection__option
+          //-       a(href="buy")
+          //-       |купить
+          //-     option(value="продать").selection__option
+          //-       a(href="sale")
+          //-       |продать
           |недвижимость бизнес-класса в Крыму
         +e.P.__text База эксклюзивной недвижимости
           block

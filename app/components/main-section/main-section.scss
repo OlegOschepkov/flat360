@@ -12,23 +12,58 @@
     flex-wrap: wrap;
   }
 
-  &__title, &__select {
+  &__title {
     @include text-2;
   }
 
-  &__select {
-    border: 1px solid rgba($color: #fff, $alpha: 0.5);
-    // position: relative;
-    transition: $ease-main;
-    width: auto;
+  // &__select {
+  //   border: 1px solid rgba($color: #fff, $alpha: 0.5);
+  //   // position: relative;
+  //   transition: $ease-main;
+  //   width: auto;
 
-    &:hover {
-      background-color: $color-brown;
-    }
-  }
+  //   &:hover {
+  //     background-color: $color-brown;
+  //   }
+  // }
 
   &__text {
     @include text-7;
+  }
+}
+
+.inputbox {
+  display: inline-block;
+  width: auto;
+  position: relative;
+  background: transparent;
+  transition: $ease-main;
+
+  &::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: $ease-main;
+    transform-origin: left;
+    background-color: $color-brown;
+  }
+
+  &:hover {
+    &::before {
+      transform: translate(100%);
+    }
+  }
+}
+
+option {
+  @include text-2;
+
+  .is-open {
+    background-color: $color-brown;
   }
 }
 

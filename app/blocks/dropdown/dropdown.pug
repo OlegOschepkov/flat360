@@ -1,3 +1,8 @@
 mixin dropdown()
-  +b.js-dropdown.dropdown&attributes(attributes)
-    block
+  .dropdown&attributes(attributes).js-dropdown
+    .dropdown__content
+      button.dropdown__button
+        block
+        //- img.dropdown__arrow(src="https://via.placeholder.com/32x12")
+      .dropdown__list.js-dropdown-list
+        a.dropdown__item(href="#") купить
