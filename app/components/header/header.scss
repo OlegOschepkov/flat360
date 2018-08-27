@@ -36,10 +36,10 @@
     // z-index: 100;
     // right: 44px;
     // top: 30px;
-    background: url('/assets/images/burger.svg') center center no-repeat;
+    background: url('../images/burger.svg') center center no-repeat;
 
     &.is-active {
-        background: url('/assets/images/Catalog_close.svg') center center;
+        background: url('../images/Catalog_close.svg') center center;
     }
   }
 }
@@ -63,7 +63,7 @@
   .button {
     &__catalog {
       margin-top: -2px;
-      background: url('/assets/images/burger.svg') top center no-repeat;
+      background: url('../images/burger.svg') top center no-repeat;
     }
   }
 }

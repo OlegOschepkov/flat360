@@ -3,7 +3,7 @@
   min-height: 100vh;
   // height: 568px;
   padding: 0 31px 0 28px;
-  background: $color-antracite url('/assets/images/BG_sale.jpg') center center no-repeat;
+  background: $color-antracite url('../images/BG_sale.jpg') center center no-repeat;
 
   &__content {
     padding-top: 200px;
@@ -50,7 +50,7 @@
 
 @media screen and (min-width: 767px) {
   .main-section {
-    background: $color-antracite url('/assets/images/BG_sale_tablet.jpg') center center no-repeat;
+    background: $color-antracite url('../images/BG_sale_tablet.jpg') center center no-repeat;
     padding: 0 92px;
 
     &__content {
@@ -70,7 +70,7 @@
 
 @media screen and (min-width: 1075px) {
   .main-section {
-    background: $color-antracite url('/assets/images/BG_sale_desktop.jpg') center center no-repeat;
+    background: $color-antracite url('../images/BG_sale_desktop.jpg') center center no-repeat;
     padding: 0 165px;
 
     &__content {
