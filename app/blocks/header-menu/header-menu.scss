@@ -4,7 +4,7 @@
   left: 0;
   z-index: 10;
   width: 100%;
-  background: $color-antracite url('/assets/images/BG_catalog.png') -350px center;
+  background: $color-antracite url('../assets/images/BG_catalog.png') -350px center;
 
   &__phone {
     margin-top: 112px;
@@ -62,7 +62,7 @@
   }
 
   .header-menu {
-    background: url('/assets/images/BG_catalog.png') -650px center no-repeat, url('/assets/images/BG_tablet_menu.png') 100px 620px no-repeat, $color-antracite;
+    background: url('../assets/images/BG_catalog.png') -650px center no-repeat, url('../assets/images/BG_tablet_menu.png') 100px 620px no-repeat, $color-antracite;
 
     &__list {
       margin-top: 12px;
@@ -104,7 +104,7 @@
   }
 
   .header-menu {
-    background: url('/assets/images/BG_catalog.png') -20px -30px no-repeat, url('/assets/images/BG_tablet_menu_big.png') 600px 485px no-repeat, $color-antracite;
+    background: url('../assets/images/BG_catalog.png') -20px -30px no-repeat, url('../assets/images/BG_tablet_menu_big.png') 600px 485px no-repeat, $color-antracite;
 
     &__phone {
       display: none;
@@ -133,7 +133,7 @@
 
 @media screen and (min-width: 1368px) {
   .header-menu {
-    background: url('/assets/images/BG_catalog.png') center center no-repeat, url('/assets/images/BG_tablet_menu_big.png') 35% 80% no-repeat, $color-antracite;
+    background: url('../assets/images/BG_catalog.png') center center no-repeat, url('../assets/images/BG_tablet_menu_big.png') 233% 72% no-repeat, $color-antracite;
     background-size: cover contain;
   }
 
