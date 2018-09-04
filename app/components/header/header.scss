@@ -36,7 +36,7 @@
     // z-index: 100;
     // right: 44px;
     // top: 30px;
-    background: url('../images/burger.svg') center center no-repeat;
+    background: url('../images/burger.svg') top middle no-repeat;
 
     &.is-active {
         background: url('../images/Catalog_close.svg') center center;
@@ -48,9 +48,9 @@
 
 @media screen and (min-width: 767px) {
   .header {
-    margin: 0 4px;
+    margin: 0 0 0 4px;
     top: 64px;
-    width: calc(100% - 200px);
+    width: calc(100% - 2 * #{$padding-size-tablet});
 
     &__logo {
       img {
@@ -73,7 +73,7 @@
     top: 57px;
     padding: 0 6px 0 5px;
     margin: 0 auto;
-    width: calc(100% - 330px);
+    width: calc(100% - 342px);
     max-width: $container-width;
   }
   .button__catalog {

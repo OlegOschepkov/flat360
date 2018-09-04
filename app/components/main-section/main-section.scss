@@ -3,7 +3,7 @@
   min-height: 100vh;
   // height: 568px;
   padding: 0 31px 0 28px;
-  background: $color-antracite url('../images/BG_sale.jpg') center center no-repeat;
+  background: $color-antracite url('../images/BG_sale.jpg') 48% top no-repeat;
 
   &__content {
     padding-top: 200px;
@@ -14,6 +14,7 @@
 
   &__title {
     @include text-2;
+    margin-bottom: 18px;
   }
 
   // &__select {
@@ -85,7 +86,7 @@ option {
 
 @media screen and (min-width: 767px) {
   .main-section {
-    background: $color-antracite url('../images/BG_sale_tablet.jpg') center center no-repeat;
+    background: $color-antracite url('../images/BG_sale_tablet.jpg') left -242px bottom no-repeat;
     padding: 0 92px;
 
     &__content {
@@ -98,15 +99,15 @@ option {
 
     &__text {
       @include text-4;
-      margin-top: 42px;
+      margin-top: 24px;
     }
   }
 }
 
 @media screen and (min-width: 1075px) {
   .main-section {
-    background: $color-antracite url('../images/BG_sale_desktop.jpg') center center no-repeat;
-    padding: 0 165px;
+    background: $color-antracite url('../images/BG_sale_desktop.jpg') left -214px top -245px no-repeat;
+    padding: 0 165px 22px;
 
     &__content {
       padding-top: 286px;
@@ -115,10 +116,11 @@ option {
     &__title, &__select {
       @include heading-1;
       line-height: calc(100 / 76);
+      margin-bottom: 0;
     }
     &__text {
       @include text-4;
-      margin-top: 39px;
+      margin-top: 34px;
       margin-left: 3px;
     }
   }

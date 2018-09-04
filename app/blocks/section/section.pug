@@ -1,0 +1,5 @@
+mixin section(blockClass, elementClass, titleText, textText)
+  +b.SECTION(class=blockClass)&attributes(attributes)
+    +e.H2(class=__elementClass)= titleText
+    +e.P.__elementClass-text= textText
+      block
