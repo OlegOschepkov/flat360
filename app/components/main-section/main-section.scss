@@ -126,3 +126,10 @@ option {
   }
 }
 
+@media screen and (min-width: 1370px) {
+  .main-section {
+    background: $color-antracite url('../images/BG_sale_desktop.jpg') center center no-repeat;
+    background-size: cover;
+  }
+}
+

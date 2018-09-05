@@ -1,13 +1,39 @@
 mixin advantages()
   +b.SECTION.advantages&attributes(attributes)
-    +e.H2.__title Работаем только с квартирами бизнес- и комфорт- класса
-    +e.H2.__title_desktop Работаем только&nbsp;с квартирами и домами бизнес- и комфорт- класса
-    +e.P.__title-text Знаем все об особенностях процесса продажи: помогаем заключить выгодную сделку, сэкономить силы и время.
-    -
-      var texts = ['Берем на себя весь процесс: от фотографий и поиска покупателя до юридической помощи в сделке.',
-        'Стремимся оправдывать доверие клиентов и быть образцом для коллег и партнеров по рынку.',
-        'Ценим время наших клиентов: грамотно выстраиваем процессы и оперативно реагируем на любые ситуации.']
-    +b.UL.advantages-list
-      each val, index in ['Просто', 'Порядочно', 'Быстро']
-        +e.LI.__item.js-slider1= val
-          +e.P.__item-text= texts[index]
+    .container
+      +e.H2.__title Работаем только с квартирами бизнес- и комфорт- класса
+      +e.H2.__title_desktop Работаем только&nbsp;с квартирами и домами бизнес- и комфорт- класса
+      +e.P.__title-text Знаем все об особенностях процесса продажи: помогаем заключить выгодную сделку, сэкономить силы и время.
+      -
+        var texts = ['Берем на себя весь процесс: от фотографий и поиска покупателя до юридической помощи в сделке.',
+          'Стремимся оправдывать доверие клиентов и быть образцом для коллег и партнеров по рынку.',
+          'Ценим время наших клиентов: грамотно выстраиваем процессы и оперативно реагируем на любые ситуации.']
+      +tabs.advantages-list
+        +tab()(data-tab-target="tab1").active.advantages-list__item
+          p.advantages-list__item-title Просто
+          p.advantages-list__item-text_mobile Берем на себя весь процесс: от фотографий и поиска покупателя до юридической помощи в сделке.
+        +tab()(data-tab-target="tab2").advantages-list__item
+          p.advantages-list__item-title Порядочно
+          p.advantages-list__item-text_mobile Стремимся оправдывать доверие клиентов и быть образцом для коллег и партнеров по рынку.
+        +tab()(data-tab-target="tab3").advantages-list__item
+          p.advantages-list__item-title Быстро
+          p.advantages-list__item-text_mobile Ценим время наших клиентов: грамотно выстраиваем процессы и оперативно реагируем на любые ситуации.
+      +tabs-content
+        +tab-wrapper()(data-tab="tab1" data-tab-group="testtabs").active.item-wrapper
+          p.advantages-list__item-text Берем на себя весь процесс: от фотографий и поиска покупателя до юридической помощи в сделке.
+        +tab-wrapper()(data-tab="tab2" data-tab-group="testtabs").item-wrapper
+          p.advantages-list__item-text Стремимся оправдывать доверие клиентов и быть образцом для коллег и партнеров по рынку.
+        +tab-wrapper()(data-tab="tab3" data-tab-group="testtabs").item-wrapper
+          p.advantages-list__item-text Ценим время наших клиентов: грамотно выстраиваем процессы и оперативно реагируем на любые ситуации.
+
+
+
+
+
+
+
+
+      //- +b.UL.advantages-list
+      //-   each val, index in ['Просто', 'Порядочно', 'Быстро']
+      //-     +e.LI.__item.js-slider1= val
+      //-       +e.P.__item-text= texts[index]
