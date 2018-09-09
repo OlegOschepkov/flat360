@@ -1,0 +1,20 @@
+mixin thanks()
+  +b.SECTION.thanks.visually-hidden&attributes(attributes)
+    .container
+      .thanks-wrapper
+        div.thanks__logo
+          img(src="../assets/images/360flatLogo.svg" alt="Логотип 360flatLogo")
+        +button.button-close.js-close
+          p.visually-hidden Закрыть
+        div
+          +e.P.phone 8 800 550 94 22
+          +e.P.title Спасибо!
+          +e.P.text Заявка успешно отправлена и уже очень скоро наш специалист перезвонит вам, а пока ознакомьтесь с подборками эксклюзивной недвижимости.
+        +b.UL.thanks-list.menu-list
+          li.thanks-list__item
+            a(href='VKlink') Vkontakte
+          li.thanks-list__item
+            a(href='FBlink') Facebook
+          li.thanks-list__item
+            a(href='InstaLink') Instagram
+

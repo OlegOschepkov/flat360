@@ -1,0 +1,365 @@
+.request {
+  display: block;
+  padding: 105px 30px 20px;
+  background: url("../images/BG_catalog.png") center center no-repeat, $color-antracite;
+  background-size: cover;
+}
+
+.request-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 93px;
+
+  &__title {
+    @include text-2;
+    margin-bottom: 36px;
+    order: 0;
+  }
+
+  &__statement {
+    @include text-9;
+    opacity: 0.5;
+    margin-bottom: 31px;
+    order: 2;
+  }
+
+  &__label,
+  &__input {
+    @include text-3;
+    line-height: 42px;
+  }
+  &__label {
+    opacity: 0.5;
+    position: absolute;
+    left: 0px;
+    top: 0;
+
+    &_mail {
+      top: -3px;
+      }
+    }
+
+  &__input {
+    border: none;
+    border-bottom: $color-basic 1px solid;
+    margin-bottom: 55px;
+    height: 42px;
+    opacity: 0.5;
+
+    &:hover,
+    &:active {
+      opacity: 1;
+
+      +.request-form__label {
+        @include text-10;
+        transition: $ease-main;
+        top: -19px;
+
+        &_mail {
+          top: -24px;
+        }
+      }
+
+      // ,.request-form__label_phone {
+      //   color: $color-brown;
+      // }
+
+      // ,.request-form__submit {
+      //   background-color: transparent;
+      // }
+    }
+  }
+
+
+
+  &__submit {
+    @include text-5;
+    width: 260px;
+    height: 66px;
+    margin: 0 auto;
+    order: 3;
+  }
+}
+
+.form-wrapper {
+  order: 1;
+}
+
+.wrapper {
+  position: relative;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include text-11;
+  line-height: 24px;
+  opacity: 0.5;
+
+  &__text {
+    line-height: 18px;
+    width: 146px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+}
+
+.dng,
+.serenity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 21px;
+  width: 160px;
+}
+
+@media screen and (min-width: 767px) {
+  .request {
+    padding: 151px 96px 25px;
+  }
+
+  .request-form {
+    flex-wrap: wrap;
+    height: 452px;
+    align-content: space-between;
+    margin-bottom: 159px;
+
+    &__title {
+      width: 242px;
+      margin-bottom: 108px;
+      @include heading-4;
+    }
+
+    &__statement {
+      order: 1;
+      width: 210px;
+      margin: 0;
+    }
+
+    &__label {
+      @include text-2;
+      line-height: 42px;
+      left: -2px;
+      top: 0;
+
+      &_phone {
+        top: -5px;
+      }
+    }
+
+    &__input {
+      margin-bottom: 88px;
+
+      &_mail {
+        margin-bottom: 64px;
+      }
+
+      &_phone {
+        margin-bottom: 52px;
+      }
+
+      &:hover,
+      &:active {
+        opacity: 1;
+
+        +.request-form__label {
+          @include text-8;
+          line-height: 24px;
+          transition: $ease-main;
+          top: -36px;
+
+          &_phone {
+            top: -41px;
+          }
+        }
+      }
+    }
+
+    &__submit {
+      @include text-3;
+      line-height: 24px;
+      width: 288px;
+      height: 87px;
+      background-color: $color-silver;
+
+      &:hover,
+      &:active {
+        background-color: $color-brown;
+      }
+    }
+  }
+
+  .form-wrapper {
+    order: 2;
+    width: 288px;
+  }
+
+  .footer {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    font-weight: 500;
+
+
+    &__text {
+      display: none;
+    }
+  }
+
+  .serenity {
+    order: 0;
+  }
+
+  .social-list{
+    order: 1;
+    width: 78px;
+    margin-top: 0;
+    margin-left: 5px;
+
+    &__link {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .dng {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 1075px) {
+  .request {
+    padding: 193px 171px 20px 169px;
+  }
+
+  .request-form {
+    height: 484px;
+    margin-bottom: 146px;
+
+    &__title {
+      @include heading-2;
+      margin-bottom: 108px;
+      width: 382px;
+    }
+
+    &__statement {
+      @include text-7;
+      width: 343px;
+    }
+
+    &__input,
+    &__label {
+      @include heading-5;
+      line-height: 42px;
+    }
+
+    // &__label {
+    //   top: 0;
+    //   &_name {
+    //   top: 0;
+    //   }
+
+    //   &_mail {
+    //   top: 0;
+    //   }
+
+    //   &_phone {
+    //   top: 0;
+    //   }
+    // }
+  }
+
+  .footer {
+    @include text-6;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .request-form {
+    &__title {
+      margin-right: 132px;
+    }
+
+    &__input {
+      &_mail {
+        margin-bottom: 83px;
+      }
+
+      &_phone {
+        margin-bottom: 71px;
+      }
+
+      &:hover {
+        +.request-form__label {
+          top: -50px;
+          left: -2px;
+        }
+      }
+    }
+    &__submit {
+      width: 512px;
+    }
+
+    &__label {
+      left: -2px;
+
+      &_name {
+        top: -17px;
+        }
+
+        &_phone {
+          top: -21px;
+        }
+
+        &_mail {
+          top: -21px;
+        }
+      }
+    }
+
+  .form-wrapper {
+    margin-top: 17px;
+    width: 512px;
+  }
+
+  .social-list {
+    width: 150px;
+    margin-left: 108px;
+    // margin-top: 4px;
+
+    &__link {
+      img {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+
+  .dng,
+  .serenity {
+    margin-top: 6px;
+  }
+
+  .dng {
+    img {
+      margin-top: 9px;
+      height: 29px;
+      width: auto;
+    }
+  }
+}

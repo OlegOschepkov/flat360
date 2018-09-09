@@ -102,6 +102,12 @@ option {
       margin-top: 24px;
     }
   }
+
+  .button__catalog.is-active {
+    width: 46px;
+    height: 46px;
+    background-size: contain;
+  }
 }
 
 @media screen and (min-width: 1075px) {
@@ -123,6 +129,16 @@ option {
       margin-top: 34px;
       margin-left: 3px;
     }
+  }
+
+  .button__catalog.is-active {
+    width: auto;
+    height: auto;
+    margin-left: 21px;
+    margin-right: 30px;
+    padding-right: 15px;
+    background: transparent;
+    position: relative;
   }
 }
 

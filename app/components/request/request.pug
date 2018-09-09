@@ -1,0 +1,45 @@
+mixin request()
+  +b.SECTION.request&attributes(attributes)
+    +container
+      +b.FORM.request-form
+        +e.P.__title Хочу продать квартиру
+        +e.P.__statement * – поле обязательно к заполнению. Нажимая на кнопку «Оставить заявку», вы даете согласие на обработку своих персональных данных.
+        .form-wrapper
+          .wrapper
+            +input.request-form__input.request-form__input_name(type="text" id="customer-name" name="customer-name")
+            +e.LABEL.__label.__label_name(for="customer-name") Имя
+            //- +e.INPUT.__name(type="text" id="customer-name" name="customer-name")
+          .wrapper
+            +input.request-form__input.request-form__input_mail(type="email" id="customer-mail" name="customer-mail")
+            +e.LABEL.__label.__label_mail(for="customer-mail") Почта
+            //- +e.INPUT.__mail(type="email" id="customer-mail" name="customer-mail")
+          .wrapper
+            +input.request-form__input.request-form__input_phone(type="tel" id="customer-phone" name="customer-phone" required)
+            +e.LABEL.__label.__label_phone(for="customer-phone") Телефон*
+            //- +e.INPUT.__phone(type="tel" id="customer-phone" name="customer-phone")
+        +input.request-form__submit.js-toggle_submit(type="submit" id="submit" name="submit" value="Оставить заявку")
+          //- +e.INPUT.__submit(type="submit" id="submit" name="submit") Оставить заявку
+      +b.footer
+        +e.P.__text База эксклюзивной недвижимости
+        +b.UL.social-list
+          +e.LI.__item.__item--vk
+            +e.A.__link.__link--vk
+              img(src="../assets/images/vk.svg")
+              p.visually-hidden Мы в Вконтакте
+          +e.LI.__item.__item--fb
+            +e.A.__link.__link--fb
+              img(src="../assets/images/fb.svg")
+              p.visually-hidden Мы на Facebook
+          +e.LI.__item.__item--ig
+            +e.A.__link.__link--ig
+              img(src="../assets/images/ig.svg")
+              p.visually-hidden Мы в Instagramm
+        +b.dng
+          +e.P.__text Проект &nbsp;
+          +e.IMG.__img(src="../assets/images/dng.svg")
+        +b.serenity
+          +e.P.__text Сделано в &nbsp;
+          +e.IMG.__img(src="../assets/images/serenity.svg")
+
+
+

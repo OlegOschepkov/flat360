@@ -1,14 +1,14 @@
 mixin header-menu()
-  +b.header-menu.visually-hidden&attributes(attributes)
-    DIV.container__catalog
-      +e.P.phone 8 800 550 94 22
-      +e.P.text Смотрите и подписывайтесь на обновления нашей эксклюзивной подборки недвижимости.
-      +b.UL.header-menu__list.menu-list
-        li.menu-list__item
-          a(href='VKlink') Vkontakte
-        li.menu-list__item
-          a(href='FBlink') Facebook
-        li.menu-list__item
-          a(href='InstaLink') Instagram
-      +button.button__order--menu Оставить заявку
-        block
+  +b.SECTION.header-menu.visually-hidden&attributes(attributes)
+    .container
+      .modal-wrapper
+        +e.P.phone 8 800 550 94 22
+        +e.P.text Смотрите и подписывайтесь на обновления нашей эксклюзивной подборки недвижимости.
+        +b.UL.header-list.menu-list
+          li.header-list__item
+            a(href='VKlink') Vkontakte
+          li.header-list__item
+            a(href='FBlink') Facebook
+          li.header-list__item
+            a(href='InstaLink') Instagram
+        +button.button__order--menu Оставить заявку

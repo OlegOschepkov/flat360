@@ -17,26 +17,25 @@
     @include text-9;
     max-width: 398px;
   }
-
-  &__list {
-    margin-top: 16px;
-    list-style: none;
-  }
 }
 
-.menu-list__item {
-  @include heading-6;
-  text-decoration: none;
-  opacity: 0.4;
-  margin-bottom: 5px;
-
-  a {
+.header-list {
+  margin-top: 16px;
+  list-style: none;
+  &__item {
+    @include heading-6;
     text-decoration: none;
-    color: $color-basic;
+    opacity: 0.4;
+    margin-bottom: 5px;
+
+    a {
+      text-decoration: none;
+      color: $color-basic;
+    }
   }
 }
 
-.container__catalog {
+.modal-wrapper {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -57,16 +56,12 @@
 }
 
 @media screen and (min-width: 767px) {
-  .container__catalog {
+  .modal-wrapper {
     padding: 0 95px;
   }
 
   .header-menu {
     background: url('../images/BG_catalog.png') -650px center no-repeat, url('../images/BG_tablet_menu.png') 100px 620px no-repeat, $color-antracite;
-
-    &__list {
-      margin-top: 12px;
-    }
 
     &__phone {
       margin-left: 2px;
@@ -81,11 +76,13 @@
     }
   }
 
-  .menu-list__item {
-    @include heading-1;
-    font-size: 76px;
-    margin-bottom: -21px;
-
+  .header-list {
+    margin-top: 12px;
+    &__item {
+      @include heading-1;
+      font-size: 72px;
+      margin-bottom: -14px;
+    }
   }
 
   .button__order--menu {
@@ -97,10 +94,9 @@
 }
 
 @media screen and (min-width: 1075px) {
-  .container__catalog {
+  .modal-wrapper {
     flex-direction: row;
-    padding: 0 170px;
-    margin: 0 auto;
+    padding: 0 25px;
   }
 
   .header-menu {
@@ -116,29 +112,28 @@
       margin-top: 327px;
       margin-right: 139px;
     }
-
-    &__list {
-      margin-top: 312px;
-    }
   }
 
   .button__order--menu {
     display: none;
   }
 
-  .menu-list__item {
-    margin-bottom: -15px;
+  .header-list {
+    margin-top: 312px;
+    &__item {
+      margin-bottom: -15px;
+    }
   }
 }
 
 @media screen and (min-width: 1368px) {
   .header-menu {
-    background: url('../images/BG_catalog.png') center center no-repeat, url('../images/BG_tablet_menu_big.png') 233% 72% no-repeat, $color-antracite;
-    background-size: cover contain;
+    background: url('../images/BG_catalog.png') center center no-repeat, url('../images/BG_tablet_menu_big.png') 600px 485px no-repeat, $color-antracite;
+    background-size: cover, contain;
   }
 
-  .container__catalog {
-    width: 1366px;
-    margin: 0 auto;
-  }
+  // .modal-wrapper {
+  //   width: 1366px;
+  //   margin: 0 auto;
+  // }
 }

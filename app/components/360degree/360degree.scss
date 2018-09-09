@@ -4,7 +4,7 @@
 
 .top-list-wrapper {
   background: url("../images/BG_360_mobile.png") left -18px bottom no-repeat;
-  padding: 26px 30px 240px;
+  padding: 24px 30px 241px;
   min-height: 1074px;
 }
 
@@ -28,7 +28,7 @@
 
 .bottom-list-wrapper {
   background: url("../images/BG_360_lamp_mobile.png") right -85px bottom no-repeat, url("../images/BG_360_coach_mobile.png") left 140px bottom 8px no-repeat;
-  padding: 135px 30px 300px;
+  padding: 137px 30px 300px;
   min-height: 1074px;
 
   .list-title {
@@ -361,6 +361,10 @@
 }
 
 @media screen and (min-width: 1366px) {
+  .degree {
+    background: linear-gradient(to bottom, $color-brown 1756px, $color-antracite 1756px, $color-antracite 3291px, $color-brown 3291px);
+  }
+
   .top-list-wrapper {
     padding-left: 24px;
     padding-right: 25px;
@@ -371,6 +375,7 @@
   .bottom-list-wrapper {
     padding-left: 20px;
     padding-right: 29px;
+    padding-bottom: 249px;
     width: 1026px;
     background: url("../images/BG_360_lamp_desktop.png") left -308px bottom  no-repeat, url("../images/BG_360_coach_desktop.png") left 288px bottom 8px no-repeat;
   }
