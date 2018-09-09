@@ -18,7 +18,7 @@
         <div class="container">
             <header class="header">
                 <div class="header__logo">
-                    <img src="/assets/images/360flatLogo.svg" alt="Логотип 360flatLogo" />
+                    <img src="../assets/images/360flatLogo.svg" alt="Логотип 360flatLogo" />
                 </div>
                 <p class="header__phone">8 800 550 94 22</p>
                 <a class="button button__catalog js-toggle js-toggle_header-menu">
@@ -32,7 +32,7 @@
                         <div class="dropdown__content">
                             <button class="dropdown__button">продать</button>
                             <div class="dropdown__list js-dropdown-list">
-                                <a class="dropdown__item" href="#">купить</a>
+                                <a class="dropdown__item">купить</a>
                             </div>
                         </div>
                     </div>недвижимость бизнес-класса в Крыму</h1>
@@ -136,24 +136,124 @@
             </div>
         </div>
     </section>
-    <div class="header-menu visually-hidden">
-        <DIV class="container__catalog">
-            <p class="header-menu__phone">8 800 550 94 22</p>
-            <p class="header-menu__text">Смотрите и подписывайтесь на обновления нашей эксклюзивной подборки недвижимости.</p>
-            <ul class="header-menu__list menu-list">
-                <li class="menu-list__item">
-                    <a href="VKlink">Vkontakte</a>
-                </li>
-                <li class="menu-list__item">
-                    <a href="FBlink">Facebook</a>
-                </li>
-                <li class="menu-list__item">
-                    <a href="InstaLink">Instagram</a>
-                </li>
-            </ul>
-            <a class="button button__order--menu">Оставить заявку</a>
-        </DIV>
-    </div>
+    <section class="ceo">
+        <div class="container">
+            <div class="ceo-wrapper">
+                <div class="ceo-about">
+                    <picture class="ceo-about__photo">
+                        <source media="(min-width: 1075px)" srcset="../assets/images/evgeny_desktop.png" />
+                        <source media="(min-width: 765px)" srcset="../assets/images/evgeny_tablet.png" />
+                        <img srcset="../assets/images/evgeny.png" alt="Евгений Клочков" />
+                    </picture>
+                    <p class="ceo-about__name">Евгений Клочков</p>
+                    <p class="ceo-about__position">Основатель и генеральный директор</p>
+                </div>
+                <p class="ceo__idea">Продвигаем идею высоких стандартов на рынке недвижимости юга России через экспертный, простой и порядочный сервис для покупателей и продавцов квартир.</p>
+            </div>
+        </div>
+    </section>
+    <section class="request">
+        <div class="container">
+            <form class="request-form">
+                <p class="request-form__title">Хочу продать квартиру</p>
+                <p class="request-form__statement">* – поле обязательно к заполнению. Нажимая на кнопку «Оставить заявку», вы даете согласие на обработку своих персональных данных.</p>
+                <div class="form-wrapper">
+                    <div class="wrapper">
+                        <input class="input request-form__input request-form__input_name" type="text" id="customer-name" name="customer-name" />
+                        <label class="request-form__label request-form__label request-form__label_name" for="customer-name">Имя</label>
+                    </div>
+                    <div class="wrapper">
+                        <input class="input request-form__input request-form__input_mail" type="email" id="customer-mail" name="customer-mail" />
+                        <label class="request-form__label request-form__label request-form__label_mail" for="customer-mail">Почта</label>
+                    </div>
+                    <div class="wrapper">
+                        <input class="input request-form__input request-form__input_phone" type="tel" id="customer-phone" name="customer-phone" required="required" />
+                        <label class="request-form__label request-form__label request-form__label_phone" for="customer-phone">Телефон*</label>
+                    </div>
+                </div>
+                <input class="input request-form__submit js-toggle_submit" type="submit" id="submit" name="submit" value="Оставить заявку" />
+            </form>
+            <div class="footer">
+                <p class="footer__text">База эксклюзивной недвижимости</p>
+                <ul class="social-list">
+                    <li class="social-list__item social-list__item--vk">
+                        <a class="social-list__link social-list__link--vk">
+                            <img src="../assets/images/vk.svg" />
+                            <p class="visually-hidden">Мы в Вконтакте</p>
+                        </a>
+                    </li>
+                    <li class="social-list__item social-list__item--fb">
+                        <a class="social-list__link social-list__link--fb">
+                            <img src="../assets/images/fb.svg" />
+                            <p class="visually-hidden">Мы на Facebook</p>
+                        </a>
+                    </li>
+                    <li class="social-list__item social-list__item--ig">
+                        <a class="social-list__link social-list__link--ig">
+                            <img src="../assets/images/ig.svg" />
+                            <p class="visually-hidden">Мы в Instagramm</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="dng">
+                    <p class="dng__text">Проект &nbsp;</p>
+                    <img class="dng__img" src="../assets/images/dng.svg" alt="" role="presentation" />
+                </div>
+                <div class="serenity">
+                    <p class="serenity__text">Сделано в &nbsp;</p>
+                    <img class="serenity__img" src="../assets/images/serenity.svg" alt="" role="presentation" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="thanks visually-hidden">
+        <div class="container">
+            <div class="thanks-wrapper">
+                <div class="thanks__logo">
+                    <img src="../assets/images/360flatLogo.svg" alt="Логотип 360flatLogo" />
+                </div>
+                <a class="button button-close js-close">
+                    <p class="visually-hidden">Закрыть</p>
+                </a>
+                <div>
+                    <p class="thanks__phone">8 800 550 94 22</p>
+                    <p class="thanks__title">Спасибо!</p>
+                    <p class="thanks__text">Заявка успешно отправлена и уже очень скоро наш специалист перезвонит вам, а пока ознакомьтесь с подборками эксклюзивной недвижимости.</p>
+                </div>
+                <ul class="thanks-list menu-list">
+                    <li class="thanks-list__item">
+                        <a href="VKlink">Vkontakte</a>
+                    </li>
+                    <li class="thanks-list__item">
+                        <a href="FBlink">Facebook</a>
+                    </li>
+                    <li class="thanks-list__item">
+                        <a href="InstaLink">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="header-menu visually-hidden">
+        <div class="container">
+            <div class="modal-wrapper">
+                <p class="header-menu__phone">8 800 550 94 22</p>
+                <p class="header-menu__text">Смотрите и подписывайтесь на обновления нашей эксклюзивной подборки недвижимости.</p>
+                <ul class="header-list menu-list">
+                    <li class="header-list__item">
+                        <a href="VKlink">Vkontakte</a>
+                    </li>
+                    <li class="header-list__item">
+                        <a href="FBlink">Facebook</a>
+                    </li>
+                    <li class="header-list__item">
+                        <a href="InstaLink">Instagram</a>
+                    </li>
+                </ul>
+                <a class="button button__order--menu">Оставить заявку</a>
+            </div>
+        </div>
+    </section>
     <script src="assets/scripts/app.min.js"></script>
     <script src="assets/scripts/main.js"></script>
 </body>
