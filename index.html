@@ -24,7 +24,7 @@
                 <a class="button button__catalog js-toggle js-toggle_header-menu">
                     <span class="button__title">Каталог</span>
                 </a>
-                <a class="button button__order">Оставить заявку</a>
+                <a class="button button__order js-toggle js-toggle_submit">Оставить заявку</a>
             </header>
             <div class="main-section__content">
                 <h1 class="main-section__title">Поможем
@@ -43,7 +43,7 @@
     <section class="advantages">
         <div class="container">
             <h2 class="advantages__title">Работаем только с квартирами бизнес- и комфорт- класса</h2>
-            <h2 class="advantages__title advantages__title_desktop">Работаем только&nbsp;с квартирами и домами бизнес- и комфорт- класса</h2>
+            <h2 class="advantages__title advantages__title_desktop">Работаем только с&nbsp;квартирами и домами бизнес- и комфорт- класса</h2>
             <p class="advantages__title-text">Знаем все об особенностях процесса продажи: помогаем заключить выгодную сделку, сэкономить силы и время.</p>
             <ul class="tabs advantages-list">
                 <li class="tabs__tab active advantages-list__item" data-tab-target="tab1">
@@ -75,9 +75,10 @@
     <section class="degree">
         <div class="container">
             <div class="top-list-wrapper">
-                <h2 class="list-title">Поддержка на 360°</h2>
-                <p class="list-title-text">Берем процесс продажи вашей квартиры «под ключ».</p>
-                <p class="list-title-text list-title-text_desktop">Берем процесс продажи Вашей квартиры «под ключ».</p>
+                <div class="list-title">
+                    <h2 class="list-title__title">Поддержка на 360°</h2>
+                    <p class="list-title__text">Берем процесс продажи вашей квартиры «под ключ».</p>
+                </div>
                 <ul class="list-top list">
                     <li class="list-top__item list-top__item list-top__item_0">
                         <p class="list-top__item-title">Помогаем собрать документы</p>
@@ -98,10 +99,12 @@
                 </ul>
             </div>
             <div class="bottom-list-wrapper">
-                <h2 class="list-title">Поддержка на 360°</h2>
-                <h2 class="list-title list-title_desktop">Преимущества на 360°</h2>
-                <p class="list-title-text">Берем процесс продажи вашей квартиры «под ключ».</p>
-                <p class="list-title-text list-title-text_desktop">Фокусируем наш сервис на решении вашей задачи.</p>
+                <div class="list-title">
+                    <h2 class="list-title__title">Поддержка на 360°</h2>
+                    <h2 class="list-title__title_desktop">Преимущества на 360°</h2>
+                    <p class="list-title__text">Берем процесс продажи вашей квартиры «под ключ».</p>
+                    <p class="list-title__text_desktop">Фокусируем наш сервис на решении вашей задачи.</p>
+                </div>
                 <ul class="tabs list-bottom list">
                     <li class="tabs__tab active list-bottom__item" data-tab-target="tab1">
                         <p class="list-bottom__item-title">Заинтересованная аудитория</p>
@@ -198,10 +201,12 @@
                 <div class="dng">
                     <p class="dng__text">Проект &nbsp;</p>
                     <img class="dng__img" src="./assets/images/dng.svg" alt="" role="presentation" />
+                    <p class="visually-hidden">DNG</p>
                 </div>
                 <div class="serenity">
                     <p class="serenity__text">Сделано в &nbsp;</p>
                     <img class="serenity__img" src="./assets/images/serenity.svg" alt="" role="presentation" />
+                    <p class="visually-hidden">SERENITY</p>
                 </div>
             </div>
         </div>
