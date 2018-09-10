@@ -60,7 +60,6 @@
           top: -24px;
         }
       }
-
       // ,.request-form__label_phone {
       //   color: $color-brown;
       // }
@@ -70,8 +69,6 @@
       // }
     }
   }
-
-
 
   &__submit {
     @include text-5;
@@ -266,7 +263,6 @@
       @include heading-5;
       line-height: 42px;
     }
-
     // &__label {
     //   top: 0;
     //   &_name {
@@ -311,6 +307,7 @@
         }
       }
     }
+
     &__submit {
       width: 512px;
     }

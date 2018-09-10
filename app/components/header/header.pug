@@ -1,9 +1,9 @@
 mixin header()
-  +b.HEADER&attributes(attributes)
-      div.header__logo
-        img(src="../assets/images/360flatLogo.svg" alt="Логотип 360flatLogo")
-      +e.P.phone 8 800 550 94 22
-      +button.button__catalog.js-toggle_header-menu
-        span.button__title Каталог
-      +button.button__order Оставить заявку
-          block
+  +b.HEADER.header&attributes(attributes)
+    div.header__logo
+      img(src="../assets/images/360flatLogo.svg" alt="Логотип 360flatLogo")
+    +e.P.phone 8 800 550 94 22
+    +button.button__catalog.js-toggle_header-menu
+      span.button__title Каталог
+    +button.button__order.js-toggle_submit Оставить заявку
+        block

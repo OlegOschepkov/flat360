@@ -9,22 +9,25 @@
 }
 
 .list-title {
-  @include text-2;
-  margin-bottom: 23px;
+  &__title {
+    @include text-2;
+    margin-bottom: 23px;
 
-  &_desktop {
-    display: none;
+    &_desktop {
+      display: none;
+    }
+  }
+
+  &__text {
+    @include text-7;
+    margin-bottom: 77px;
+
+    &_desktop {
+      display: none;
+    }
   }
 }
 
-.list-title-text {
-  @include text-7;
-  margin-bottom: 77px;
-
-  &_desktop {
-    display: none;
-  }
-}
 
 .bottom-list-wrapper {
   background: url("../images/BG_360_lamp_mobile.png") right -85px bottom no-repeat, url("../images/BG_360_coach_mobile.png") left 140px bottom 8px no-repeat;
@@ -32,12 +35,15 @@
   min-height: 1074px;
 
   .list-title {
-    margin-bottom: 14px;
+    &__title {
+      margin-bottom: 14px;
+    }
+
+    &__text {
+      margin-bottom: 98px;
+    }
   }
 
-  .list-title-text {
-    margin-bottom: 98px;
-  }
 }
 
 .list {
@@ -127,6 +133,7 @@
   .list-top {
     max-width: 690px;
     margin-left: auto;
+
     &__item {
       display: flex;
       flex-direction: row;
@@ -157,33 +164,29 @@
       width: 27.8%;
       color: $color-basic;
 
-      // &::before {
-        //   top: 60px;
-        //   background-color: $color-basic;
-        // }
-        // &-title {
-          //   margin-bottom: 98px;
-          // }
-          &-text {
-            margin-top: 37px;
+      &::before {
+          display: none;
+        }
 
-            &_fat {
-              @include text-1;
-              margin-top: 0;
-            }
+      &-text {
+        margin-top: 37px;
 
-            &_thin {
-              @include text-4;
-              margin-top: 37px;
-          }
+        &_fat {
+          @include text-1;
+          margin-top: 0;
+        }
 
-          &_mobile {
-            display: none;
-          }
+        &_thin {
+          @include text-4;
+          margin-top: 37px;
+        }
+
+        &_mobile {
+          display: none;
         }
       }
-
     }
+  }
 
   .item-wrapper {
     display: none;
@@ -191,37 +194,45 @@
   }
 
   .list-title {
-    @include heading-4;
-    margin-bottom: 28px;
-  }
+    &__title {
+      @include heading-4;
+      margin-bottom: 28px;
+      display: block;
+    }
 
-  .list-title-text {
-    @include text-4;
-    margin-bottom: 128px;
+    &__text {
+      @include text-4;
+      display: block;
+      margin-bottom: 126px;
+    }
   }
 
   .bottom-list-wrapper {
     position: relative;
-    padding:  139px $padding-size-tablet 0;
-    min-height: 1005px;
+    padding:  144px $padding-size-tablet 0;
+    min-height: 1000px;
     background: url("../images/BG_360_lamp_tablet.png") left -123px bottom  no-repeat, url("../images/BG_360_coach_tablet.png") left 234px bottom 6px no-repeat;
 
 
     .list-title {
-      display: none;
+      &__title {
+        display: none;
 
-      &_desktop {
-        display: block;
-        margin-bottom: 28px;
+        &_desktop {
+          @include heading-4;
+          margin-bottom: 28px;
+          display: block;
+        }
       }
-    }
 
-    .list-title-text {
-      display: none;
+      &__text {
+        display: none;
 
-      &_desktop {
-        display: block;
-        margin-bottom: 126px;
+        &_desktop {
+          @include text-4;
+          display: block;
+          margin-bottom: 126px;
+        }
       }
     }
   }
@@ -257,7 +268,8 @@
   }
 
   .list-top {
-    margin-left: 134px;
+    margin-left: auto;
+    margin-top: -212px;
     max-width: 100%;
     height: 1108px;
 
@@ -288,10 +300,19 @@
   }
 
   .list-title {
-    @include heading-2;
-    // flex-grow: 1;
-    min-width: 100%;
-    margin-bottom: 94px;
+    &__title {
+      @include heading-2;
+      // flex-grow: 1;
+      min-width: 100%;
+      margin-bottom: 94px;
+    }
+
+    &__text {
+      @include text-4;
+      display: block;
+      width: 207px;
+      margin-top: 4px;
+    }
   }
 
 
@@ -300,14 +321,18 @@
     background: url("../images/BG_360_lamp_desktop.png") left -161px bottom  no-repeat, url("../images/BG_360_coach_desktop.png") left 434px bottom 8px no-repeat;
 
     .list-title {
-      margin-bottom: 41px;
-    }
+      &__title_desktop {
+        @include heading-2;
+        margin-bottom: 41px;
+      }
 
-    .list-title-text_desktop {
-      width: auto;
-      margin-top: 0;
-      margin-left: 5px;
-      margin-bottom: 129px;
+      &__text_desktop {
+        @include text-4;
+        width: auto;
+        margin-top: 0;
+        margin-left: 5px;
+        margin-bottom: 129px;
+      }
     }
   }
 
@@ -315,10 +340,10 @@
     margin-left: 5px;
     width: 693px;
 
-
     &__item {
       width: 26%;
       padding-bottom: 15px;
+      margin-bottom: 89px;
 
       &::before {
         display: none;
@@ -343,20 +368,8 @@
   }
 
   .item-wrapper {
-      left: $padding-size-desktop;
-      width: 703px;
-  }
-
-
-  .list-title-text {
-    display: none;
-
-    &_desktop {
-      @include text-4;
-      display: block;
-      width: 207px;
-      margin-top: 4px;
-    }
+    left: $padding-size-desktop;
+    width: 703px;
   }
 }
 
@@ -375,7 +388,7 @@
   .bottom-list-wrapper {
     padding-left: 20px;
     padding-right: 29px;
-    padding-bottom: 249px;
+    padding-bottom: 255px;
     width: 1026px;
     background: url("../images/BG_360_lamp_desktop.png") left -308px bottom  no-repeat, url("../images/BG_360_coach_desktop.png") left 288px bottom 8px no-repeat;
   }

@@ -1,9 +1,9 @@
 mixin main-section()
   +b('section').main-section&attributes(attributes)
     +container
-      +header.header
+      +header
       +b.main-section__content
-        h1.main-section__title Поможем
+        +e.H1.__title Поможем
           +dropdown.main-section__dropdown продать
           //- +inputbox
           //-   //- +select

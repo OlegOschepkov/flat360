@@ -124,6 +124,7 @@ option {
       line-height: calc(100 / 76);
       margin-bottom: 0;
     }
+
     &__text {
       @include text-4;
       margin-top: 34px;

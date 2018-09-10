@@ -13,19 +13,20 @@ mixin 360degree()
         //- 'Фиксируем и оставляем неизменными до закрытия сделки.',
         //- 'Изучаем документы и владельцев, описываем возможные риски.']
       .top-list-wrapper
-        +b.H2.list-title Поддержка на 360°
-        +b.P.list-title-text Берем процесс продажи вашей квартиры «под ключ».
-        +b.P.list-title-text_desktop Берем процесс продажи Вашей квартиры «под ключ».
+        .list-title
+          h2.list-title__title Поддержка на 360°
+          p.list-title__text Берем процесс продажи вашей квартиры «под ключ».
         +b.UL.list-top.list
           each val, index in ['Помогаем собрать документы', 'Оформляем объявление', 'Продвигаем объявление', 'Закрываем  сделку']
             +e.LI.__item(class="list-top__item_" + [index])
               +e.P.__item-title= val
               +e.P.__item-text= textsFirst[index]
       .bottom-list-wrapper
-        +b.H2.list-title Поддержка на 360°
-        +b.H2.list-title_desktop Преимущества на 360°
-        +b.P.list-title-text Берем процесс продажи вашей квартиры «под ключ».
-        +b.P.list-title-text_desktop Фокусируем наш сервис на решении вашей задачи.
+        .list-title
+          h2.list-title__title Поддержка на 360°
+          h2.list-title__title_desktop Преимущества на 360°
+          p.list-title__text Берем процесс продажи вашей квартиры «под ключ».
+          p.list-title__text_desktop Фокусируем наш сервис на решении вашей задачи.
         +tabs.list-bottom.list
           +tab()(data-tab-target="tab1").active.list-bottom__item
             p.list-bottom__item-title Заинтересованная аудитория

@@ -24,9 +24,11 @@
   &__order {
   display: none;
   }
+
   &__title {
     display: none;
   }
+
   &__catalog {
     width: 26px;
     height: 27px;
@@ -76,6 +78,7 @@
     width: calc(100% - 342px);
     max-width: $container-width;
   }
+
   .button__catalog {
     width: auto;
     margin-left: 21px;
@@ -98,6 +101,7 @@
 
     &.is-active {
       background: none;
+
       &::after {
         top: 15px;
         transform: rotate(225deg);

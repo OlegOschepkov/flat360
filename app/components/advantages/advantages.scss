@@ -81,6 +81,7 @@
           display: none;
         }
       }
+
       &__item-text {
         @include text-1;
         display: none;
@@ -95,11 +96,9 @@
 
   .active {
     color: $color-brown;
-
     // &::before {
       //   background-color: $color-brown;
       // }
-
 
     >.advantages-list__item-text {
       display: block;
@@ -139,7 +138,6 @@
     &__item{
       @include text-3;
       width: 26%;
-
       // &::before {
         //   top: 38px;
       // }
